@@ -24,10 +24,14 @@ html {
   scroll-behavior: smooth;
 }
 
+h1 {
+  color: #ff9500;
+}
+
 
 body {
-  background: radial-gradient(circle at top, #0f2a2e, #05080f 70%);
-  color: #fff;
+  background: #dad6d6;
+  color: #000;
   overflow-x: hidden;   /* allow vertical scroll */
 }
 
@@ -61,22 +65,36 @@ body {
   align-items: center;
   text-align: center;
   padding: 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+#hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .hero h1 {
   font-size: 3.5rem;
   line-height: 1.15;
   margin-bottom: 15px;
+  color: #fff;
 }
 
 .hero h1 span {
-  color: #ff9f1a;
+  color: #ff9500;
 }
 
 .subtitle {
   opacity: 0.85;
   font-size: 1.1rem;
   margin-bottom: 30px;
+  color: #fff;
 }
 
 /* Pills */
@@ -290,8 +308,8 @@ button {
   font-size: 34px;
   margin-bottom: 40px;
 
-  color: #ffd166;
-  font-weight: 800;
+  color: #000000;
+  font-weight: 900;
   letter-spacing: 0.4px;
 
 
@@ -413,7 +431,7 @@ button {
   font-size: 34px;
   margin-bottom: 40px;
 
-  color: #ffd166;
+  color: #000000;
   font-weight: 800;
   letter-spacing: 0.4px;
 
@@ -445,11 +463,12 @@ button {
 
 /* CARD */
 .expect-card {
-  background: rgba(105, 84, 84, 0.299);
+  background: #81C784;
   border: 2px solid rgba(255, 255, 255, 0.352);
   border-radius: 18px;
   padding: 30px 26px;
   text-align: center;
+  color: #000;
   -webkit-backdrop-filter: blur(0px);
   backdrop-filter: blur(10px);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
@@ -673,7 +692,7 @@ button {
   font-size: 34px;
   margin-bottom: 40px;
 
-  color: #ffd166;
+  color: #000000;
   font-weight: 800;
   letter-spacing: 0.4px;
 
@@ -775,7 +794,7 @@ button {
 .eligibility-title {
   font-size: 34px;
   margin-bottom: 8px;
-  color: #ffd166;
+  color: #000000;
   font-weight: 800;
 }
 
@@ -795,10 +814,10 @@ button {
 
 /* CARD */
 .eligibility-card {
-  background: rgba(255, 247, 247, 0.148);
+  background: rgba(220, 218, 218, 0.458);
   -webkit-backdrop-filter: blur(70px);
   backdrop-filter: blur(1px);
-  border: 2px solid rgba(255, 255, 255, 0.347);
+  border: 2px solid rgba(21, 6, 6, 0.722);
   border-radius: 18px;
   overflow: hidden;
 
@@ -895,7 +914,7 @@ button {
   font-size: 34px;
   margin-bottom: 40px;
 
-  color: #ffd166;
+  color: #000000;
   font-weight: 800;
   letter-spacing: 0.4px;
 
@@ -934,12 +953,11 @@ button {
 
 /* CARD */
 .theme-card {
-  background: rgba(255,255,255,0.08);
-  -webkit-backdrop-filter: blur(16px);
-  backdrop-filter: blur(16px);
+  background: #81C784;
   border: 2px solid rgba(255, 255, 255, 0.349);
   border-radius: 20px;
   padding: 22px;
+  color: #000;
 
   box-shadow: 0 25px 55px rgba(0,0,0,0.45);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
@@ -1074,9 +1092,7 @@ button {
 .judging-header h2 {
   font-size: 36px;
   font-weight: 800;
-  background: linear-gradient(90deg, #fff04c, #f9ca6d);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #000;
 }
 
 .judging-header p {
@@ -1140,7 +1156,7 @@ button {
   margin-bottom: 26px;
   font-size: 23px;
   font-weight: 700;
-  color: #ecff98;
+  color: #0b0d03;
 }
 
 /* ===============================
@@ -1208,13 +1224,13 @@ button {
 }
 
 .points li::before {
-  content: "✔";
+  content: "•";
   position: absolute;
   left: 0;
   top: 12px;
   color: #00c896;
   font-weight: bold;
-  text-shadow: 0 0 6px rgba(0, 255, 150, 0.7);
+  font-size: 20px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1271,7 +1287,7 @@ button {
 .prize-header h2 {
   font-size: 34px;
   font-weight: 800;
-  color: #ffd166;
+  color: #000;
 }
 
 .prize-header p {
@@ -1410,7 +1426,7 @@ button {
 .contact-header h2 {
   font-size: 34px;
   font-weight: 800;
-  color: #ffd166;
+  color: #000;
 }
 
 .contact-header p {
